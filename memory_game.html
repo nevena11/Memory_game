@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Memory Game</title>
+		<link rel="stylesheet" type="text/css" href="memory_game.css">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	</head>
+	<body>
+
+		<div id="homePage" class="startdiv">
+			<h1>Rock Star Memory Game</h1>
+			<form action="">
+		  	<input type="text" placeholder="Username" required="">
+		  </form>
+		  <section class="save_button">
+		  	<button onclick="saveUsername()">Play</button>
+		  </section>
+		  <section class="level_button">
+			  <button id="easy" class="level hide" onclick="startGame(16)">Easy</button>
+			  <button id="medium" class="level hide" onclick="startGame(36)">Medium</button>
+			  <button id="hard" class="level hide" onclick="startGame(64)">Hard</button>
+			 </section>
+		</div>
+
+		<div id="timerContainer"><label id="timer" ></label></div>
+		
+		<div id="secondPage">
+			<h2 id="end_message" class="hide"></h2>
+			<div id="share" class="hide"></div>
+			<div id="twitter" class="hide"></div>
+			<button id="new_game" class="hide" onClick="window.location.reload()">New Game</button>
+			<div id="timerContainer"><label id="timer" ></label></div>
+			<section id="quitAndList">
+				<div id="quit" class="hide"></div>
+				<button id="listButton" class="hide" onclick="rangListButtonClick()">Rang <br> List</button>
+			</section>
+			<div id="board" class="hide"></div>
+		</div>
+
+		<script type="text/javascript" src="memory_game.js"></script>
+	
+	</body>
+</html>

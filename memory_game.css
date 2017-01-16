@@ -1,0 +1,209 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  /*font-family: 'Slabo 27px', serif;*/
+  font-family: 'Quicksand', sans-serif;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: url(images/background.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  /*background: -webkit-linear-gradient(#000, #fff); 
+  background: -o-linear-gradient(#000, #fff);
+  background: -moz-linear-gradient(#000, #fff);
+  background: linear-gradient(#000, #fff);*/
+}
+.startdiv {
+  margin-top: 100px;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#secondPage {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#quitAndList {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  font-size: 60px;
+  color: #000;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+.startdiv > form {
+  margin: 10px;
+}
+form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+input {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #208582;
+}
+button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  margin: 10px;
+  width: 110px;
+}
+#easy {
+  border: 1px outset green;
+}
+#medium {
+  border: 1px outset yellow;
+}
+#hard {
+  border: 1px outset red;
+}
+#timer {
+  color: red;
+  font-size: 20px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+#timerContainer {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 200px;
+}
+#share {
+  font-size: 40px;
+  margin-top: 20px;
+  color: #3B5998;
+}
+#end_message {
+  font-size: 45px;
+  font-family: 'Slabo 27px', serif;
+  color: #000;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+#new_game {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 40px;
+}
+.section__content {
+  margin: 20px auto 0;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 5px 5px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.card__front {
+  background: url(images/rock.jpg);
+  border: 1px solid #fff;
+}
+
+.card__back {
+  background-color: #EB0000;
+  padding-top: 25%;
+  /*line-height: 80px;*/
+  box-sizing: border-box;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.card.effect__click.flipped .card__front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+#quit {
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
